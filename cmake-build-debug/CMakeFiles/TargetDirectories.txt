@@ -1,0 +1,3 @@
+C:/Users/fe/Desktop/FileSizeMgr/cmake-build-debug/CMakeFiles/FileSizeMgr.dir
+C:/Users/fe/Desktop/FileSizeMgr/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/fe/Desktop/FileSizeMgr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
