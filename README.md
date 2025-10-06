@@ -29,3 +29,34 @@
 
 ### 可直接使用的StatList.tsv内容
 已经置于StatList.tsv，进行修改即可
+
+# File Monitor Program README
+
+## Overview
+Monitors specified files/folders in real-time with minimal system resource usage, and performs predefined actions when size thresholds are exceeded.
+
+## Usage
+1. **Modify Monitoring List**: Edit the `StatList.tsv` file to add monitoring entries according to the format
+2. **Start Monitoring Program**: Run the main program (e.g., `FileMonitor.exe`)
+
+## TSV File Format
+
+### File Structure
+- **First line**: Must be `file	size	execute	type` (tab-separated)
+- **Subsequent lines**: Each line represents one monitoring task, with parameters separated by **tabs**
+
+### Parameter Description
+| Parameter | Description |
+|-----------|-------------|
+| file | Full path to the file/folder to monitor |
+| size | Size threshold (supports units: B/KB/MB/GB/TB, case-insensitive) |
+| execute | Action type: `warn`(warning) / `trash`(clear contents) |
+| type | Target type: `file`(file) / `path`(folder/drive) |
+
+## Configuration Examples
+
+### Typical Use Case
+Path: `C:\Users\<Username>\AppData\Local\Temp`	500MB	trash	path
+Function: Automatically clears contents when Temp folder reaches 500MB (preserves folder structure)
+
+### Ready-to-use StatList.tsv Content:
